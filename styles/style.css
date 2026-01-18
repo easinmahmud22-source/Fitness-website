@@ -192,7 +192,7 @@ header{
 
 
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 576px){
     header{
     max-width: 100%;
     
