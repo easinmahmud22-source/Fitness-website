@@ -1,11 +1,12 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
 }
+
 body{
     font-family: "Inter", sans-serif;
     color: #fff;
@@ -30,7 +31,10 @@ body{
     background-color: #fff;
     color: #E6533C;
 }
-
+.mx-1240{ 
+    max-width: 70%;
+    margin: 0 auto;
+}
 
 
 /* Navbar style */
@@ -92,6 +96,7 @@ body{
     color: #fff;
     padding: 16px 46px;
     border-radius: 46px;
+    background-color: #E6533C;
     border: 1px solid transparent;
 }
 .btn-secondary{
@@ -158,14 +163,99 @@ body{
 
 /* Header Style */
 header{
-    max-width: 70%;
-    margin: 0 auto;
     padding-top: 57px;
     
 }
 .banner-title{
     font-size: 2rem;
 }
+
+/* Habit Card Section */
+main{
+    background-color:rgba(0, 0, 0, 1);
+}
+.habit-section{
+    padding-top: 100px;
+}
+.habit-container{
+    text-align: center;
+}
+.habit-title{
+    font-size: 48px;
+    margin-bottom: 14px;
+}
+.habit-description{
+    font-size: 14px;
+    color: #ffffff75;
+}
+.habit-card{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 100px;
+    margin-top: 60px;
+    justify-content: space-around;
+}
+.card{
+    
+}
+.card img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 1px solid gray;
+}
+.card h4{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+.card p{
+    color: #ffffff75;
+    font-size: 14px;
+}
+/* Run Section */
+.run-section{
+    display: flex;
+    align-items: center;
+    gap: 165px;
+    padding: 40px;
+    background-color: #222222;
+    border: none;
+    border-radius: 18px;
+    margin-top: 100px;
+}
+.run-title{
+    font-size: 48px;
+    margin-bottom: 14px;
+}
+.run-description{
+    font-size: 14px;
+    margin-bottom: 34px;
+    color: #ffffff75;
+}
+
+.run-section .btn-primary{
+    width: ;
+}
+
+.run-section .image-area img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -254,5 +344,21 @@ header{
         border-radius: 30px;
         margin-right: 10px;
     }
-    
+    /* habit section */
+    .habit-card{
+        grid-template-columns: repeat(1 , 1fr);
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .card img{
+        margin-top: 20px;
+    }
+    /* run section */
+    .run-section{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .run-section .btn-primary{
+        width: 100%;
+    }
 }
