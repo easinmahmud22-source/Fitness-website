@@ -174,9 +174,7 @@ header{
     padding-top: 57px;
     
 }
-/* .banner-title{
-    font-size: 2rem;
-} */
+
 
 /* Habit Card Section */
 main{
@@ -249,21 +247,30 @@ main{
     grid-template-columns: repeat(4 , 1fr);
     grid-template-rows: repeat(2, 250px);
     margin-bottom: 50px;
-    /* position: relative; */
 }
 .exercises img{
     width: 100%;
     height: 100%;
     mix-blend-mode: multiply;
 }
-/* .exercises p{
-    position: absolute;
-    bottom: -15px;
-    margin-left: 20px;
-} */
-
+.exercises p{
+    padding: 0;
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+    position: relative;
+}
 .box1{
     background: rgb(1, 244, 200);
+}
+.box1>p ,.box3>p ,.box5>p,.box6>p{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+.box2>p,.box4>p{
+    position: absolute;
+    top: 20px;
+    right: 20px;
 }
 .box2{
     background-color: rgba(255, 93, 93, 0.805);
@@ -272,7 +279,9 @@ main{
 .box3{
     background-color: rgba(231, 180, 180, 0.5);
     grid-column: 4/span 5;
+    
 }
+
 .box4{
     background-color: rgba(246, 144, 144, 0.937);
     grid-column: 1/span 2;
@@ -325,6 +334,9 @@ main{
     max-width: 100%;
     
     }
+    .hamburger i{
+        font-size: 20px;
+    }
     .brand{
         padding: 0 20px;
     }
@@ -336,7 +348,10 @@ main{
    }
    .hamburger{
     display: inline;
-}
+    }
+    .banner-title{
+    font-size: 3.5rem;
+    }
    .banner-headline,.banner-image{
     max-width: 100%;
     padding: 0 20px;
@@ -410,17 +425,18 @@ main{
     .box1{
         grid-column: auto;
     }
+    
     .box2{
         grid-column: auto;
     }
     .box3{
-        grid-column: auto;
+        display: none;
     }
     .box4{
         grid-column: auto;
     }
     .box5{
-        display: none;
+        grid-column: auto;
     }
     .box6{
         display: none;
